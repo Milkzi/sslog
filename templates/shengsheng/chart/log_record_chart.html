@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block log_record_chart %}
+    <!-- 图表容器 DOM -->
+    <meta charset="utf-8">
+
+
+        <div id="container" style="width: 1000px;height:500px;margin:50px auto"></div>
+
+    <!-- 引入 highcharts.js -->
+
+    <script>
+        // 图表配置
+        var options = {
+	chart: {
+		type: 'line'
+	},
+	title: {
+		text: '日志数量统计'
+	},
+	subtitle: {
+		text: ''
+	},
+	xAxis: {
+		categories: {{ log_record_time | tojson }}
+	},
+	yAxis: {
+		title: {
+			text: '数量'
+		}
+	},
+	plotOptions: {
+		line: {
+			dataLabels: {
+				// 开启数据标签
+				enabled: true
+			},
+			// 关闭鼠标跟踪，对应的提示框、点击事件会失效
+			enableMouseTracking: true
+		}
+	},
+	series: [{
+        type:"line",
+		name: '每日总量统计',
+		data: {{ log_record_data }}
+	}]
+};
+        // 图表初始化函数
+        var chart = Highcharts.chart('container', options);
+    </script>
+
+
+{% endblock %}

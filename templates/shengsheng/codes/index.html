@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block query_log_record_logs %}
+
+
+    <div style="width: 200px;height:60px;float: right;">
+        <a href="{{ url_for('log_app.clear_log_record_by_code',code=code) }}">
+        <button type="submit" class="btn btn-warning mb-2" style="float: left">清空此日志</button></a>
+    </div>
+
+    <div class="one_info_style">
+        <table class="table table-hover" style="text-align: center;">
+            <thead>
+            <tr>
+                <th style="width: 5%">编号</th>
+                <th style="width: 75%">日志信息</th>
+                <th style="width: 10%">时间</th>
+                <th style="width: 10%">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if all_log_datas %}
+                {% for log_data in all_log_datas %}
+                    <tr class="alter" style="height: auto">
+                        <td>{{ loop.index }}</td>
+                        <td>{{ log_data.log_info }}</td>
+                        <td>{{ log_data.insert_time }}</td>
+                        <td><a href="{{ url_for('log_app.delete_log_record',id=log_data.id,code=log_data.code) }}"><button class="btn btn-danger btn-sm">删除</button></a></td>
+
+                    </tr>
+                {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <style>
+        .one_info_style {
+            margin: 10px 20px;
+            font-size: 10px;
+        }
+        .one_info_style table tbody tr td{
+            word-wrap:break-word;word-break:break-all;
+            white-space: pre-wrap !important;
+            padding: 10px;
+        }
+
+    </style>
+{% endblock %}

@@ -1,0 +1,248 @@
+[{
+        "id": 53698294,
+        "prepaid_prompt": "",
+        "prompt": "",
+        "is_order_ahead": 0,
+        "service_charges": 0,
+        "open_driver_package": 1,
+        "is_vip_goods": 1,
+        "parameters": 1,
+        "order_id": 0,
+        "user_id": 2515785,
+        "is_rightnow": 0,
+        "loading_time_is_realtime": 0,
+        "tel_status": 0,
+        "goods_level": 2,
+        "weight": 8.0,
+        "goods_name": "普货",
+        "loading_time_date": "2022-06-15",
+        "loading_time_period": 0,
+        "expired_timestamp": 1655269381,
+        "no_contact_over_time": 20,
+        "is_expired": 1,
+        "loading_time_period_begin": 1655247600,
+        "loading_time_period_end": 1655265600,
+        "distance_time": "明天 07:00-12:00 装货",
+        "time": "明天 07:00-12:00 装货",
+        "unloading_time_date": "",
+        "unloading_time_period_begin": 0,
+        "unloading_time_period_end": 0,
+        "unloading_distance_time": "",
+        "payment_method": 1,
+        "need_recognizance": 0,
+        "need_back_goods": 0,
+        "need_transport": 0,
+        "need_receipt": 0,
+        "need_delivery": 0,
+        "need_policy": 0,
+        "need_collect_trade_charges": 0,
+        "relative_distance": 3,
+        "mileage_total": 64.6,
+        "min_price": 0,
+        "over_mileage": 0,
+        "over_mileage_price": 0,
+        "status": 1,
+        "status_msg": "下单",
+        "haul_dist": 2,
+        "volume": 35.0,
+        "description": "",
+        "update_time": 1655216402,
+        "carpool": 0,
+        "left_contact_time": 20,
+        "left_contact_time_type": 1,
+        "left_contact_msg": "当前为诚信会员优先联系时间",
+        "left_contact_reminder": "读秒结束可联系",
+        "is_prior_contact": 0,
+        "left_prior_time": 0,
+        "images": [],
+        "extra_comments": [],
+        "extra_requires": [],
+        "vip_suggestion": {
+            "type": "web",
+            "page": "https://h5.huitouche.cn/mod/honester/index.html?config=goods",
+            "params": {
+                "title": "开通诚信会员，接单快人一步",
+                "vip_type": 1,
+                "is_need_pop": 0,
+                "status": 3,
+                "region_timer_title": "开通诚信会员, 免读秒, 收入更高>>"
+            }
+        },
+        "prior_suggestion": {
+            "type": "web",
+            "page": "https://h5.huitouche.cn/mod/recommend/index.html?config=zookeeper",
+            "params": {
+                "title": "",
+                "vip_type": 0,
+                "is_need_pop": 0,
+                "status": 0,
+                "region_timer_title": "",
+                "pop_title": "",
+                "pop_content": "",
+                "left_contact_reminder": "",
+                "left_contact_msg": ""
+            }
+        },
+        "goods_histories": [
+            {
+                "date": "2022.06.14 今天",
+                "details": [
+                    {
+                        "time": "22:19:21",
+                        "content": "有司机联系"
+                    },
+                    {
+                        "time": "22:17:33",
+                        "content": "有司机联系"
+                    },
+                    {
+                        "time": "22:17:26",
+                        "content": "货主下单"
+                    }
+                ]
+            }
+        ],
+        "before_contact_driver_remind": "谈好后记得点“接单”，避免被他人低价抢走",
+        "after_contact_driver_remind": "点“接单”，避免被其他司机抢走",
+        "can_share": 1,
+        "mandatory_reading_time": 0,
+        "wait_order_label": "请勿与司机线下交易，避免被爽约",
+        "is_insured": 1,
+        "require_vehicle": {
+            "vehicle_name": "7.6米",
+            "region_vehicle_id": 5104,
+            "is_carpool": 0,
+            "length": 7.6,
+            "width": 2.4,
+            "height": 2.5,
+            "extra": [
+                {
+                    "key": "accept_high_sided",
+                    "name": "高栏",
+                    "price": 0.0
+                }
+            ],
+            "comment": "搬运: 司机另议， 返程: 附加40%路费， 小推车: 免费， 拍照回单: 免费， 纸质回单: 免费",
+            "min_weight": 0.0,
+            "max_weight": 12.0,
+            "min_volume": 0.0,
+            "max_volume": 48.0
+        },
+        "locations": [
+            {
+                "index": 0,
+                "province": {
+                    "id": 440000,
+                    "name": "广东省"
+                },
+                "city": {
+                    "id": 441900,
+                    "name": "东莞市"
+                },
+                "county": {
+                    "id": 441900118,
+                    "name": "大岭山镇"
+                },
+                "town": {
+                    "id": 441900118,
+                    "name": "大岭山镇"
+                },
+                "longitude": 113.8322,
+                "latitude": 22.876919,
+                "full_region_name": "广东省东莞市大岭山镇",
+                "address": "东莞市盛雄光电科技有限公司(东南门)",
+                "building_address": "",
+                "user_name": "谢",
+                "mobile": "",
+                "is_start_location": 1,
+                "is_end_location": 0,
+                "street_name": "",
+                "street_number": ""
+            },
+            {
+                "index": 1,
+                "province": {
+                    "id": 440000,
+                    "name": "广东省"
+                },
+                "city": {
+                    "id": 440100,
+                    "name": "广州市"
+                },
+                "county": {
+                    "id": 440113,
+                    "name": "番禺区"
+                },
+                "town": {
+                    "id": 440113105,
+                    "name": "化龙镇"
+                },
+                "longitude": 113.444322,
+                "latitude": 23.042774,
+                "full_region_name": "广东省广州市番禺区化龙镇",
+                "address": "华盛建材",
+                "building_address": "",
+                "user_name": "谢",
+                "mobile": "",
+                "is_start_location": 0,
+                "is_end_location": 1,
+                "street_name": "",
+                "street_number": ""
+            }
+        ],
+        "price": {
+            "peak_time_fee": 0,
+            "need_driver_deposit": 0,
+            "is_prepaid": 0,
+            "goods_level": 2,
+            "price_recommend": 577,
+            "price_expect": 577,
+            "price_paid": 0.0,
+            "coupon_value": 0,
+            "price_total": 577,
+            "premium": 0.0,
+            "bonus": 0,
+            "is_system_price": 1,
+            "type": 2,
+            "price": 577,
+            "price_raw": 577,
+            "price_addition": 0,
+            "goods_deposit": 0.0,
+            "driver_service_fee": 0.0,
+            "order_price": 0,
+            "is_increase_price": 1,
+            "is_phone_discuss": 0,
+            "price_unit": 9.0,
+            "price_type": 2,
+            "price_history_min": 461,
+            "price_history_max": 744,
+            "price_expect_min": 57,
+            "price_expect_max": 1154,
+            "price_deposit_min": 20.0,
+            "price_deposit_max": 57,
+            "can_be_fast": 1
+        },
+        "stats": {
+            "auth_goods": 0,
+            "auth_driver": 1,
+            "auth_company": 0,
+            "auth_status": 2,
+            "goods_count": 37,
+            "vehicle_source_count": 0,
+            "deal_count": 0,
+            "bad_credit": 0,
+            "credit_level": 5,
+            "integral": 0,
+            "days": 770,
+            "user_name": "姚健",
+            "avatar_url": "",
+            "is_trust_member": 0,
+            "trust_member": 0
+        },
+        "car_follower_comment": "不跟车",
+        "car_follower_type": 0,
+        "is_show_mileage": 1,
+        "is_show_unit_price": 1,
+        "is_damage_tips": 1,
+        "driver_damage_txt": "尊敬的用户您好，提醒您抢单后与用户沟通时，提醒用户货物包装是否符合运输要求，提前把货物包装完成，同时提醒您车上备好雨布、绳索，感谢您的支持与配合"
+    }]

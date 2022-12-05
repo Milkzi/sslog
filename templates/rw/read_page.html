@@ -1,0 +1,17 @@
+{% extends 'rw/rw_base.html' %}
+{% block title_info %}读取{% endblock %}
+{% block wirte_info %}
+
+    <div class="feng_info_style">
+        <p>{{ rw_data }}</p>
+    </div>
+    <style>
+        .feng_info_style{
+            width: 90%;
+            margin: 40px auto;
+        }
+        .flash{
+            color: firebrick;
+        }
+    </style>
+{% endblock %}

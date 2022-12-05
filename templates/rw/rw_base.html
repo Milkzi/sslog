@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <link rel="icon" type="image/svg+xml" href="{{ url_for("static",filename="image/book.png")}}"/>
+    <link href="{{ url_for("static",filename="css/bootstrap.min.css")}}" rel="stylesheet" >
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+
+
+    <title>{% block title_info %}{% endblock %}</title>
+</head>
+<body>
+
+
+<div class="base_div">
+
+
+
+            {% block wirte_info %}{% endblock %}
+            {% block read_info %}{% endblock %}
+
+    </div>
+
+</body>
+<style>
+    .base_div{
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
+    table{
+        table-layout:fixed
+    }
+           table tr {
+            line-height: 15px;
+
+            border: 1px solid #ccc;
+
+        }
+
+        td {
+            border:1px solid #ccc;
+            word-break: keep-all; /* 不换行 */
+
+            white-space: nowrap; /* 不换行 */
+
+            overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+
+            text-overflow: ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用*/
+
+        }
+        .base_ul {
+                        width: 80%;
+                    height: 80px;
+        margin: 10px auto;
+        }
+        .base_ul ul {
+
+    list-style: none;
+            padding: 0;
+}
+
+.base_ul li {
+    line-height: 20px;
+    float:left;
+
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.base_ul span{
+    color: #bd2130;
+}
+
+</style>
+
+</html>

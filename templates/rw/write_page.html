@@ -1,0 +1,29 @@
+{% extends 'rw/rw_base.html' %}
+{% block title_info %}写入{% endblock %}
+
+{% block wirte_info %}
+
+    <div class="feng_info_style">
+        <form action="{{ url_for("rw_app.rw_write_index") }}" method="post">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1"><h4>写入数据:</h4></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="30" name="write_data" required></textarea>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn-lg btn-primary">写&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp入</button>
+                                {% for message in get_flashed_messages() %}
+                    <div class="flash">{{ message }}</div>
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+    <style>
+        .feng_info_style{
+            width: 90%;
+            margin: 40px auto;
+        }
+        .flash{
+            color: firebrick;
+        }
+    </style>
+{% endblock %}

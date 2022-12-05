@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block version_code_chart %}
+    <!-- 图表容器 DOM -->
+    <meta charset="utf-8">
+
+        <div style="text-align: center;margin-top: 30px"><h4>当天活跃各版本绑定授权码总数量:<span style="color: firebrick">{{ all_version_bind_code }}</span></h4></div>
+        <div id="container" style="width: 1000px;height:500px;margin:50px auto"></div>
+
+    <!-- 引入 highcharts.js -->
+
+    <script>
+        // 图表配置
+ Highcharts.chart('container', {
+	chart: {
+		plotBackgroundColor: null,
+		plotBorderWidth: null,
+		plotShadow: false,
+		type: 'pie'
+	},
+	title: {
+		text: '当天前10各版本version绑定比例'
+	},
+	tooltip: {
+		pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	},
+	plotOptions: {
+		pie: {
+			allowPointSelect: true,
+			cursor: 'pointer',
+			dataLabels: {
+				enabled: true,
+				format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+				style: {
+					color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+				}
+			}
+		}
+	},
+	series: [{
+		name: 'Version',
+		colorByPoint: true,
+		data: {{ data_list | tojson }}
+	}]
+});
+    </script>
+
+
+{% endblock %}

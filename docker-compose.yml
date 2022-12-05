@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  app_ss_log:
+    container_name: sslog_app
+    hostname: sslog_hostname
+    build: .
+    image: sslog-img
+    restart: always
+    ports:
+      - "9200:9200"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1g"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+#  redis:
+#    container_name: fangfeng_redis
+#    hostname: fangfeng_redis
+#    image: redis:6.0-alpine
+#    restart: always
+#    ports:
+#      - "6379:6379"
+#    command:
+#      - /bin/sh
+#      - -c
+#      - redis-server /usr/local/bin/redis.conf/redis.conf --requirepass "hu697693"
+
+
+
