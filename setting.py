@@ -10,7 +10,7 @@ SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://hucheng:hu697693@106.14.26.159:3306/s
 # redis数据库地址
 # REDIS_URI = 'fangfeng-redis'
 
-REDIS_URI = '110.42.1.173'
+REDIS_URI = '106.14.26.159'
 # 便于调试
 TEMPLATES_AUTO_RELOAD = True
 SEND_FILE_MAX_AGE_DEFAULT = 0
